@@ -1,5 +1,4 @@
 import 'package:dio/dio.dart';
-import 'package:fl_pr_9/core/interceptors_app.dart';
 import 'package:get_it/get_it.dart';
 import 'package:pretty_dio_logger/pretty_dio_logger.dart';
 
@@ -13,7 +12,6 @@ Future<void> init() async {
         ),
       )..interceptors.addAll(
           [
-            InterceptorsApp(),
             PrettyDioLogger(),
           ],
         ));
